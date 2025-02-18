@@ -1,0 +1,25 @@
+copyright 2025 git learning
+
+Apache HTTP Server (commonly referred to as Apache) is an open-source web server software that allows websites to be served over the internet. It operates using the Apache 2.0 license, which is a permissive open-source license that allows users to freely use, modify, and distribute the software with minimal restrictions.
+
+How Apache Works
+Apache functions as a web server by handling HTTP requests and serving web pages to users. Here's a breakdown of how it operates:
+
+1. Client Requests a Webpage
+A user enters a website URL (e.g., http://example.com) in their browser.
+The browser sends an HTTP request to the Apache web server hosting that website.
+2. Apache Processes the Request
+Apache listens on port 80 (for HTTP) and port 443 (for HTTPS).
+It uses modules (like mod_rewrite for URL handling and mod_ssl for SSL encryption) to process the request.
+Apache determines how to handle the request based on configuration files (httpd.conf, .htaccess, or apache2.conf).
+3. Apache Retrieves or Generates the Response
+If the request is for a static file (e.g., HTML, CSS, images), Apache fetches it from the file system.
+If the request is for a dynamic page (e.g., PHP, Python, or Perl scripts), Apache passes it to the appropriate processor (such as mod_php for PHP or mod_wsgi for Python).
+4. Apache Sends the Response to the Client
+The processed data (HTML, JSON, images, etc.) is sent back to the user’s browser.
+The browser renders the response, displaying the requested webpage.
+Key Features of Apache
+Modular Design: Supports extensions like mod_ssl (for HTTPS), mod_rewrite (for URL rewriting), and more.
+Virtual Hosts: Hosts multiple websites on the same server.
+Security Features: Supports SSL/TLS encryption and authentication mechanisms.
+Reverse Proxy Support: Can act as a reverse proxy for load balancing.
